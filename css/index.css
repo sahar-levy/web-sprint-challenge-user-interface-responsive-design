@@ -83,6 +83,15 @@ p, a {
     font-size: 3rem;
 }
 
+/* general styles */
+* {
+    max-width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 /* header section */
 header {
     width: 100%;
