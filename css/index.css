@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 html {
@@ -65,6 +66,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, a, i {
     text-decoration: none;
+    color: rgb(225, 239, 230);
 }
 
 h1 {
@@ -83,15 +85,6 @@ p, a {
     font-size: 3rem;
 }
 
-/* general styles */
-* {
-    max-width: 100%;
-}
-
-html {
-    font-size: 62.5%;
-}
-
 /* header section */
 header {
     width: 100%;
@@ -101,6 +94,18 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
+.transparent-header {
+    background-color: rgb(0, 4, 17, .8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* navigation */
+
 
 /* spacers */
 .spacer {
