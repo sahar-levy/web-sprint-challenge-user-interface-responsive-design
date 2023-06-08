@@ -49,7 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 html {
@@ -81,6 +81,10 @@ h3 {
     font-size: 5rem;
 }
 
+h4 {
+    font-size: 2rem;
+}
+
 p, a {
     font-size: 3rem;
 }
@@ -95,17 +99,41 @@ header {
     background-repeat: no-repeat;
 }
 
-
-.transparent-header {
-    background-color: rgb(0, 4, 17, .8);
+header div {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.transparent-header {
+    background-color: rgb(0, 4, 17, .8);
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* navigation */
+.nav-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 
+.nav-footer {
+
+}
+
+/* social media icons */
+.socialmedia-icons {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    align-self: center;
+    justify-content: space-evenly;
+    font-size: 3rem;
+}
 
 /* spacers */
 .spacer {
@@ -205,9 +233,53 @@ header {
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
+    /* height: 15vh; */
     padding-top: 2.5vh;
     font-size: 3rem;
+    background-color: rgb(0, 4, 17);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer div {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%;
+}
+
+footer div h3 {
+    width: 100%;
+    font-size: 3rem;
+}
+
+.mailing-list {
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.mailing-list input {
+    width: 40%;
+}
+
+.mailing-list input, button {
+    font-size: 2rem;
+    height: 38%;
+}
+
+.nav-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-footer a {
+    font-size: 2.5rem;
+}
+
+.nav-copyright h4 {
+    align-self: flex-end;
 }
 
 /* mobile media query */
